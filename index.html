@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./css/jquery-ui.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/toastr.min.css" />
+    <title>Trajes típicos de Canarias</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            Dificultad:
+        </p>
+        <div id="divBotones"></div>
+    </div>
+
+    <div id="padreJuego">
+        <div id="trajesDisponibles" name="original"></div>
+        <div id="nombresIslas"></div>
+        <div id="contenidoJuego"></div>
+    </div>
+    <div id="divPuntuacion">
+        <p>Puntuación: <span id="puntuacion"></span> de <span id="puntuacionDificultad"></span></p>
+        <p>Errores: <span id="errores"></span> de <span id="erroresDificultad"></span></p>
+    </div>
+
+    <div id="modal" title="Fin del juego">
+        <p>Fin de la partida, has <span id="resultadoPartida"></span></p>
+        <p>Reintentar?</p>
+        <button id="siReinicia">Sí</button>
+        <button id="noReinicia">No</button>
+      </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/toastr.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script type="module" src="./js/all.js"></script>
+</body>
+
+</html>
